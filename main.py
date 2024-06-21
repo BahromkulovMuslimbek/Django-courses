@@ -1,0 +1,1 @@
+#1) Project nomida - bolishi mumkun emas

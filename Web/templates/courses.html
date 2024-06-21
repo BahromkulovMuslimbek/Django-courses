@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный центр - Курсы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            animation: slideIn 1s ease-out forwards;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0099ff;
+            animation: fadeIn 2s ease-out forwards;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #005c99;
+        }
+        main {
+            padding: 2rem;
+            background-color: white;
+        }
+        h2 {
+            color: #333;
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+        .course-section, .contact-section {
+            animation: fadeInUp 2s ease-out forwards;
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .course-list {
+            list-style: none;
+            padding: 0;
+        }
+        .course {
+            background-color: #e6f7ff;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-left: 5px solid #0066cc;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .course:hover {
+            background-color: #cceeff;
+        }
+        .contact-section {
+            padding: 2rem;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            border: 2px solid #0066cc;
+        }
+        .contact-info {
+            margin-top: 1rem;
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Наши курсы</h1>
+    </header>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/courses/">Курсы</a>
+        <a href="/register/">Регистрация</a>
+    </nav>
+    <main>
+        <section class="course-section">
+            <h2>Доступные курсы</h2>
+            <div class="course">
+                <h3>Курс 1: Введение в программирование</h3>
+                <p>Этот курс предназначен для начинающих и охватывает основы программирования на языке Python.</p>
+            </div>
+            <div class="course">
+                <h3>Курс 2: Веб-разработка</h3>
+                <p>Изучите основы HTML, CSS и JavaScript для создания современных веб-сайтов.</p>
+            </div>
+            <div class="course">
+                <h3>Курс 3: Анализ данных</h3>
+                <p>Научитесь анализировать и визуализировать данные с использованием инструментов, таких как Excel и Tableau.</p>
+            </div>
+            <div class="course">
+                <h3>Курс 4: Машинное обучение</h3>
+                <p>Углубленный курс по машинному обучению, включающий работу с популярными библиотеками Python.</p>
+            </div>
+        </section>
+        <section class="contact-section">
+            <h2>Контакты:</h2>
+            <div class="contact-info">
+                <p><strong>Адрес:</strong> г. Мушкина, ул. Пушкина, д. Колотушкина</p>
+                <p><strong>Телефон:</strong> +998 90 111 11-11</p>
+                <p><strong>Email:</strong> info@edu-center.com</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Учебный центр. Все права защищены.</p>
+    </footer>
+</body>
+</html>

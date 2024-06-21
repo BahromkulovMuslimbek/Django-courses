@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный центр - Главная</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            animation: slideIn 1s ease-out forwards;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0099ff;
+            animation: fadeIn 2s ease-out forwards;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #005c99;
+        }
+        main {
+            padding: 2rem;
+            background-color: white;
+        }
+        h2 {
+            color: #333;
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+        .info-section, .contact-section {
+            animation: fadeInUp 2s ease-out forwards;
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .info-section {
+            padding: 2rem;
+            background-color: #e6f7ff;
+            border-radius: 8px;
+            border: 2px solid #0066cc;
+        }
+        .contact-section {
+            padding: 2rem;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            border: 2px solid #0066cc;
+        }
+        .contact-info {
+            margin-top: 1rem;
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .teacher-photo {
+            border-radius: 50%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в учебный центр</h1>
+    </header>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/courses/">Курсы</a>
+        <a href="/register/">Регистрация</a>
+    </nav>
+    <main>
+        <section class="info-section">
+            <h2>О нас</h2>
+            <p>Наш учебный центр предлагает широкий спектр образовательных программ, предназначенных для студентов всех уровней подготовки. Мы стремимся предоставить качественное образование и помочь каждому студенту достигнуть своих целей.</p>
+        </section>
+        <section class="info-section">
+            <h2>Наши преимущества</h2>
+            <ul>
+                <li>Квалифицированные преподаватели с многолетним опытом</li>
+                <li>Широкий выбор курсов по различным направлениям</li>
+                <li>Гибкий график занятий, удобный для студентов</li>
+                <li>Современное оборудование и комфортные аудитории</li>
+                <li>Онлайн и оффлайн форматы обучения</li>
+            </ul>
+        </section>
+        <section class="info-section">
+            <h2>Отзывы наших студентов</h2>
+            <p>«Я очень доволен обучением в этом центре. Преподаватели действительно заботятся о своих студентах и всегда готовы помочь.» — Иван И.</p>
+            <p>«Курсы очень интересные и информативные. Рекомендую всем, кто хочет улучшить свои знания и навыки.» — Мария П.</p>
+        </section>
+        <section class="contact-section">
+            <h2>Контакты</h2>
+            <div class="contact-info">
+                <p><strong>Адрес:</strong> г. Мушкина, ул. Пушкина, д. Колотушкина</p>
+                <p><strong>Телефон:</strong> +998 90 111 11-11</p>
+                <p><strong>Email:</strong> info@education-center.ru</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Наши преподаватели и студенты</h2>
+            <div class="image-grid">
+                <img class="teacher-photo" src="https://nspu.ru/upload/iblock/d5d/vj4owd5dg0us41d271b3j52e3obv23vp.JPG" alt="Фото преподавателя">
+                <img class="teacher-photo" src="https://omr.gov.ua/images/galleries/maxi/40284.jpg" alt="Фото преподавателя">
+                <img class="student-photo" src="https://www.spot.uz/media/img/2024/06/pTfzTK17178394911576_l.jpg" alt="Фото студента">
+                <img class="student-photo" src="https://storage.kun.uz/source/10/PDtcCvOEgxgdGgtbLhYEGk5m37kFDl_Y.jpg" alt="Фото студента">
+                <img class="student-photo" src="https://corp-univer.ru/wp-content/uploads/images/new_2022/may_2022/2.jpg" alt="Фото студента">
+                <img class="student-photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKnOJ-H5O9ueochBgTNYfk1Cq1Bm3GF9myhQ&s" alt="Фото студента">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Учебный центр. Все права защищены.</p>
+    </footer>
+</body>
+</html>
